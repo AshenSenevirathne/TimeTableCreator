@@ -39,7 +39,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lct1 = new TestTimeTableCreator.Lct();
             this.std1 = new TestTimeTableCreator.Std();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -54,7 +53,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(182, 450);
+            this.panel1.Size = new System.Drawing.Size(182, 681);
             this.panel1.TabIndex = 0;
             // 
             // panel4
@@ -103,7 +102,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(182, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(618, 10);
+            this.panel2.Size = new System.Drawing.Size(882, 10);
             this.panel2.TabIndex = 1;
             // 
             // panel3
@@ -146,31 +145,17 @@
             // 
             // std1
             // 
-            this.std1.Location = new System.Drawing.Point(188, 98);
+            this.std1.Location = new System.Drawing.Point(188, 97);
             this.std1.Name = "std1";
             this.std1.Size = new System.Drawing.Size(600, 340);
             this.std1.TabIndex = 4;
-            // 
-            // button1
-            // 
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(763, 16);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(25, 25);
-            this.button1.TabIndex = 5;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1064, 681);
             this.Controls.Add(this.std1);
             this.Controls.Add(this.lct1);
             this.Controls.Add(this.panel3);
@@ -199,7 +184,6 @@
         private System.Windows.Forms.Panel panel4;
         private Lct lct1;
         private Std std1;
-        private System.Windows.Forms.Button button1;
     }
 }
 

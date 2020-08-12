@@ -13,6 +13,10 @@ namespace TestTimeTableCreator
         public Lct()
         {
             InitializeComponent();
+            dataGridView1.DataSource = new List<Emp> { 
+                new Emp{ studentID = 1, studentNAme = "Kusal"}
+            };
+            
         }
     }
 }
