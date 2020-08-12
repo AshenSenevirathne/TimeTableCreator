@@ -30,12 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.stu = new System.Windows.Forms.Button();
+            this.lec = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.lct1 = new TestTimeTableCreator.Lct();
+            this.std1 = new TestTimeTableCreator.Std();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -44,13 +48,54 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.stu);
+            this.panel1.Controls.Add(this.lec);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(182, 450);
             this.panel1.TabIndex = 0;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.DarkOrange;
+            this.panel4.Location = new System.Drawing.Point(0, 34);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(5, 40);
+            this.panel4.TabIndex = 5;
+            // 
+            // stu
+            // 
+            this.stu.FlatAppearance.BorderSize = 0;
+            this.stu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.stu.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.stu.ForeColor = System.Drawing.Color.White;
+            this.stu.Image = ((System.Drawing.Image)(resources.GetObject("stu.Image")));
+            this.stu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.stu.Location = new System.Drawing.Point(0, 75);
+            this.stu.Name = "stu";
+            this.stu.Size = new System.Drawing.Size(182, 40);
+            this.stu.TabIndex = 0;
+            this.stu.Text = "Student";
+            this.stu.UseVisualStyleBackColor = true;
+            this.stu.Click += new System.EventHandler(this.stu_Click);
+            // 
+            // lec
+            // 
+            this.lec.FlatAppearance.BorderSize = 0;
+            this.lec.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lec.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lec.ForeColor = System.Drawing.Color.White;
+            this.lec.Image = ((System.Drawing.Image)(resources.GetObject("lec.Image")));
+            this.lec.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lec.Location = new System.Drawing.Point(0, 34);
+            this.lec.Name = "lec";
+            this.lec.Size = new System.Drawing.Size(182, 40);
+            this.lec.TabIndex = 0;
+            this.lec.Text = "Lecturer";
+            this.lec.UseVisualStyleBackColor = true;
+            this.lec.Click += new System.EventHandler(this.lec_Click);
             // 
             // panel2
             // 
@@ -68,7 +113,7 @@
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Location = new System.Drawing.Point(207, -8);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(96, 107);
+            this.panel3.Size = new System.Drawing.Size(96, 99);
             this.panel3.TabIndex = 2;
             // 
             // label1
@@ -92,39 +137,48 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // panel4
+            // lct1
             // 
-            this.panel4.BackColor = System.Drawing.Color.DarkOrange;
-            this.panel4.Location = new System.Drawing.Point(0, 35);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(10, 39);
-            this.panel4.TabIndex = 3;
+            this.lct1.Location = new System.Drawing.Point(188, 98);
+            this.lct1.Name = "lct1";
+            this.lct1.Size = new System.Drawing.Size(600, 340);
+            this.lct1.TabIndex = 3;
             // 
-            // button2
+            // std1
             // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(9, 34);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(173, 40);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Lecturer";
-            this.button2.UseVisualStyleBackColor = true;
+            this.std1.Location = new System.Drawing.Point(188, 98);
+            this.std1.Name = "std1";
+            this.std1.Size = new System.Drawing.Size(600, 340);
+            this.std1.TabIndex = 4;
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(763, 16);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(25, 25);
+            this.button1.TabIndex = 5;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.std1);
+            this.Controls.Add(this.lct1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "Time Table Creator";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -140,8 +194,12 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button lec;
+        private System.Windows.Forms.Button stu;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button button2;
+        private Lct lct1;
+        private Std std1;
+        private System.Windows.Forms.Button button1;
     }
 }
 

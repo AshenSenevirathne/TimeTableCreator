@@ -4,7 +4,6 @@ D:\F_PROjects\TestTimeTableCreator\TimeTableCreator\TestTimeTableCreator\TestTim
 D:\F_PROjects\TestTimeTableCreator\TimeTableCreator\TestTimeTableCreator\TestTimeTableCreator\bin\Debug\netcoreapp3.1\TestTimeTableCreator.runtimeconfig.dev.json
 D:\F_PROjects\TestTimeTableCreator\TimeTableCreator\TestTimeTableCreator\TestTimeTableCreator\bin\Debug\netcoreapp3.1\TestTimeTableCreator.dll
 D:\F_PROjects\TestTimeTableCreator\TimeTableCreator\TestTimeTableCreator\TestTimeTableCreator\bin\Debug\netcoreapp3.1\TestTimeTableCreator.pdb
-D:\F_PROjects\TestTimeTableCreator\TimeTableCreator\TestTimeTableCreator\TestTimeTableCreator\obj\Debug\netcoreapp3.1\TestTimeTableCreator.csprojAssemblyReference.cache
 D:\F_PROjects\TestTimeTableCreator\TimeTableCreator\TestTimeTableCreator\TestTimeTableCreator\obj\Debug\netcoreapp3.1\TestTimeTableCreator.Form1.resources
 D:\F_PROjects\TestTimeTableCreator\TimeTableCreator\TestTimeTableCreator\TestTimeTableCreator\obj\Debug\netcoreapp3.1\TestTimeTableCreator.csproj.GenerateResource.cache
 D:\F_PROjects\TestTimeTableCreator\TimeTableCreator\TestTimeTableCreator\TestTimeTableCreator\obj\Debug\netcoreapp3.1\TestTimeTableCreator.AssemblyInfoInputs.cache
@@ -14,3 +13,7 @@ D:\F_PROjects\TestTimeTableCreator\TimeTableCreator\TestTimeTableCreator\TestTim
 D:\F_PROjects\TestTimeTableCreator\TimeTableCreator\TestTimeTableCreator\TestTimeTableCreator\obj\Debug\netcoreapp3.1\TestTimeTableCreator.pdb
 D:\F_PROjects\TestTimeTableCreator\TimeTableCreator\TestTimeTableCreator\TestTimeTableCreator\obj\Debug\netcoreapp3.1\TestTimeTableCreator.genruntimeconfig.cache
 D:\F_PROjects\TestTimeTableCreator\TimeTableCreator\TestTimeTableCreator\TestTimeTableCreator\obj\Debug\netcoreapp3.1\TestTimeTableCreator.Properties.Resources.resources
+D:\F_PROjects\TestTimeTableCreator\TimeTableCreator\TestTimeTableCreator\TestTimeTableCreator\obj\Debug\netcoreapp3.1\TestTimeTableCreator.studentCon.resources
+D:\F_PROjects\TestTimeTableCreator\TimeTableCreator\TestTimeTableCreator\TestTimeTableCreator\obj\Debug\netcoreapp3.1\TestTimeTableCreator.lecture1.resources
+D:\F_PROjects\TestTimeTableCreator\TimeTableCreator\TestTimeTableCreator\TestTimeTableCreator\obj\Debug\netcoreapp3.1\TestTimeTableCreator.Lct.resources
+D:\F_PROjects\TestTimeTableCreator\TimeTableCreator\TestTimeTableCreator\TestTimeTableCreator\obj\Debug\netcoreapp3.1\TestTimeTableCreator.Std.resources
