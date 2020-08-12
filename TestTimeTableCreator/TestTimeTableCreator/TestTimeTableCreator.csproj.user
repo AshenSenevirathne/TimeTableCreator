@@ -7,13 +7,7 @@
     <Compile Update="Lct.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="Lecture.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
     <Compile Update="Std.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="Student.cs">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>
